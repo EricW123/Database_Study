@@ -1,0 +1,3 @@
+lts
+os, mit license
+do not put node module folder into github
