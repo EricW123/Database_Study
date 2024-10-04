@@ -7,7 +7,7 @@ This HW depends a database and implements 8 queries on it.
 Visit https://www.sqlitetutorial.net/sqlite-sample-database/, find section "Download SQLite sample database" and download the database.
 Unzip the downloaded file, find the chinook.db file.
 
-Open DB Browser, import the db file then click "execute SQL". Click "Open SQL File" and choose the sql file corresponding to each queries. Then run the code, and should be able to see changes or query results to the database.
+Open DB Browser, import the db file then click "execute SQL". Click "Open SQL File" and choose the sql file corresponding to each queries. Then click the "execute" button and should be able to see changes or query results to the database.
 
 ## Queries
 
@@ -24,6 +24,7 @@ Open DB Browser, import the db file then click "execute SQL". Click "Open SQL Fi
 > Code can be found in [query5.sql](./query5.sql)
 * Query 6: Creative addition. Make an interesting query that uses a GROUP statement and at least two tables.
 > Code can be found in [query6.sql](./query6.sql)
+Bonus:
 * Query 7:  Write a query that lists all the customers that listen to longer-than-average tracks, excluding the tracks that are longer than 15 minutes. 
 > Code can be found in [query7.sql](./query7.sql)
 * Query 8:  Write a query that lists all the tracks that are not in one of the top 5 genres with longer duration in the database.
