@@ -8,8 +8,6 @@ All HW will be submitted using this repo, and this README will be updated when n
 
 ## HW3
 <details>
-    <summary> expand </summary>
-
+    <summary>Click to view</summary>
     HW 3 is a practice of SQLite3. The files are in directory [HW3](./HW3/README.md) with more detailed documentations.
-
 </details>
