@@ -17,3 +17,34 @@ Open DB Browser, create a new blank .db file, then execute the SQL code in [crea
 * P6: Populate the tables with test data. You can use tools such as https://www.mockaroo.com/schemasLinks to an external site. or  https://www.generatedata.com/Links to an external site..
 * <a name="p7"></a>P7: Define and execute at least five queries that show your database. At least one query must contain a join of at least three tables, one must contain a subquery, one must be a group by with a having clause, and one must contain a complex search criterion (more than one expression with logical connectors). Experiment with advanced query mechanisms such as RCTE, PARTITION BY, or SELECT CASE/WHEN.
 * P8: Create a basic Node + Express application that let's you create, display, modify and delete at least two of the tables with a foreign key between then. No need to have a polished interface, and you can use the code created in class as a starting point.
+> See [part8](#p8).
+
+## <a name="p8"></a>Part 8: Node + Express application
+
+By executing all sql codes for P5~P7, DB Browser should have written many data into a db file. Save it into a local file called "main.db".
+
+After saving, copy or move it to ./db/ directory (or replace the old file if there's already one in ./db/ folder), so the file structure will look similar like below:
+
+```
+├── app.js
+├── db
+|  ├── main.db
+|  └── queries.js
+├── package-lock.json
+├── package.json
+├── public
+|  ├── css
+|  |  └── style.css
+|  └── js
+|     └── script.js
+├── router
+|  └── router.js
+├── views
+|  └── index.ejs
+├── create_tables.sql
+├── insert_rows.sql
+├── queries.sql
+└── Problem.docx
+```
+
+Then, in root directory run `npm install`, and then `npm start`. There should be a log printed to terminal similar to "server is running on http://localhost:3000". By clicking the link or by manually visiting the url in browser, should be able to see the application running correctly.

@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.nowrap {
+    display: inline-block;
+}
+
+txt {
+    padding: 0 10px 0 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+button[name="edit_mode"] {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    font-size: larger;
+}
+
+factory-item, prodline-item, machine-item, team-item {
+    margin: 5px 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: solid black;
+    display: block;
+}
+
+factory-item {
+    background-color: #f0f0f0;
+}
+
+prodline-item {
+    background-color: #e0e0e0;
+}
+
+machine-item {
+    background-color: #f0f0f0;
+}
+
+team-item {
+    background-color: #f0f0f0;
+    display: flex;
+}
+
+team-item > .records {
+    flex: 1;
+}
+
+.dropdown {
+    position: absolute;
+    display: block;
+    background-color: white;
+}
+
+.item {
+    display: flex;
+    border: solid black;
+}
+
+.info {
+    display: block;
+    color: cornflowerblue;
+}
+
+.detail {
+    display: block;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+
