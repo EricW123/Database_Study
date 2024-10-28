@@ -78,6 +78,19 @@ router.get("/add-rec", async (req, res) => {
     });
 });
 
+router.get("/rm-ass", async (req, res) => {
+    try_catch(async () => {
+        await queries.removeAss(req.query.m_id, req.query.c_id);
+        res.json([]);
+    });
+});
+
+router.get("/add-ass", async (req, res) => {
+    try_catch(async () => {
+        res.json(await queries.addAss(req.query.cond, req.query.m_id));
+    })
+})
+
 
 module.exports = router;
 

@@ -39,8 +39,11 @@ async function getMachines(id) {
 async function getAssertions(id) {
     await connect();
 
-    const queries = `SELECT Condition.cond_expr FROM Assertion
-    JOIN Condition ON Assertion.cond_id = Condition.cond_id
+    const queries = `SELECT
+        Condition.cond_id,
+        Condition.cond_expr
+    FROM Assertion
+    LEFT JOIN Condition ON Assertion.cond_id = Condition.cond_id
     WHERE Assertion.machine_id = ${id}`;
     let res = await db.all(queries);
     return res;
@@ -119,6 +122,34 @@ async function getTeamName(id) {
     return res;
 }
 
+async function removeAss(m_id, c_id) {
+    await connect();
+
+    const queries = `DELETE FROM Assertion
+    WHERE machine_id = ${m_id} AND cond_id = ${c_id}`;
+    let res = await db.all(queries);
+    return res;
+}
+
+async function addAss(cond, m_id) {
+    await connect();
+
+    await db.exec('BEGIN TRANSACTION');
+    await db.run(`
+    INSERT INTO Condition (cond_expr)
+    SELECT "${cond}"
+    WHERE NOT EXISTS (SELECT 1 FROM Condition WHERE cond_expr = "${cond}")`);
+    
+    const result = await db.get(`
+    SELECT cond_id FROM Condition where cond_expr = "${cond}"`);
+
+    await db.run(`
+    INSERT INTO Assertion VALUES (${m_id}, ${result['cond_id']})`);
+
+    await db.exec('COMMIT');
+    return result;
+}
+
 
 exports.getMachines = getMachines;
 exports.getFactories = getFactories;
@@ -130,3 +161,6 @@ exports.getTeamRecs = getTeamRecs;
 exports.removeRecs = removeRecs;
 exports.addRec = addRec;
 exports.getTeamName = getTeamName;
+exports.removeAss = removeAss;
+exports.addAss = addAss;
+

@@ -219,7 +219,7 @@ class Team extends HTMLElement {
         editButt.className = 'editor';
         editButt.onclick = () => {console.log('TeamEditButt')};
         editButt.textContent = '/';
-        this.appendChild(editButt);
+        // this.appendChild(editButt);
     }
 }
 
@@ -239,22 +239,37 @@ function showAssertions(e) {
 
     closeAllDropdowns(container);
     butt.textContent = butt.textContent == 'Assertions v' ? 'Assertions >' : 'Assertions v';
-    if (dropdown.querySelector('.item')) {
-        dropdown.querySelectorAll('.item').forEach(__toggleHid);
+    if (dropdown.querySelector('.adder')) {
+        dropdown.querySelectorAll('.item, .adder').forEach(__toggleHid);
     } else {
         __fetch(`/get-ass?m_id=${e.m_id}`)
-        .then((data) => {data.forEach((item) => {
+        .then((data) => {
+            data.forEach((item) => {
+                const li = __create('div');
+                li.className = 'item';
+
+                const info = __create('div');
+                info.className = 'info';
+                info.textContent = item['cond_expr'];
+                info.style.display = 'block';
+                li.appendChild(info);
+
+                const removeButt = __create('button');
+                removeButt.textContent = '-';
+                removeButt.onclick = (ev) => {removeAss(li, item['cond_id'], e.m_id); ev.stopPropagation()};
+                removeButt.className = 'remover';
+                li.appendChild(removeButt);
+                dropdown.appendChild(li);
+            });
             const li = __create('div');
-            li.className = 'item';
+            li.className = 'adder';
 
-            const info = __create('div');
-            info.className = 'info';
-            info.textContent = item['cond_expr'];
-            info.style.display = 'block';
-            li.appendChild(info);
-
+            const addButt = __create('button');
+            addButt.textContent = '+';
+            addButt.onclick = (ev) => {addAss(dropdown, li, e.m_id); ev.stopPropagation()};
+            li.append(addButt);
             dropdown.appendChild(li);
-        })});
+        });
     }
 }
 
@@ -388,6 +403,56 @@ function closeAllDropdowns(except) {
 }
 
 document.documentElement.addEventListener('click', closeAllDropdowns);
+
+
+function removeAss(item, c_id, m_id) {
+    __fetch(`/rm-ass?c_id=${c_id}&m_id=${m_id}`)
+    .then((d) => {
+        item.remove();
+    })
+}
+
+function addAss(dropdown, addCont, machId) {
+    function submitText(i) {
+        const newText = i.value;
+        i.remove();
+
+        __fetch(`/add-ass?cond=${newText}&m_id=${machId}`)
+        .then((data) => {
+            // cond_id
+            addCont.querySelector('button').onclick = (ev) => {addAss(dropdown, addCont, machId); ev.stopPropagation()};
+            
+            const li = __create('div');
+            li.className = 'item';
+
+            const info = __create('div');
+            info.className = 'info';
+            info.textContent = newText;
+
+            li.appendChild(info);
+
+            const removeButt = __create('button');
+            removeButt.textContent = '-';
+            removeButt.onclick = (ev) => {removeRec(li,
+                data['cond_id'], machId); ev.stopPropagation()};
+            
+            li.appendChild(removeButt);
+            dropdown.insertBefore(li, addCont);
+        });
+    }
+
+    const input = __create('input');
+    input.addEventListener('click', (ev) => {ev.stopPropagation()});
+    input.addEventListener('keypress', (ev) => {
+        if (ev.key == 'Enter')
+            submitText(input);
+    });
+
+    addCont.prepend(input);
+    input.focus();
+
+    addCont.querySelector('button').onclick = (ev) => {submitText(input); ev.stopPropagation()};
+}
 
 
 function removeRec(item, id) {
