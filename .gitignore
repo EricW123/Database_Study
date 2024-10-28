@@ -1,3 +1,9 @@
 *.db
 *.db-*
 */~$*.docx
+
+*/node_modules/*
+
+database.sqlite
+main.sqbpro
+package-lock.json
