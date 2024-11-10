@@ -21,8 +21,15 @@ All HW will be submitted using this repo, and this README will be updated when n
 </details>
 
 ## Proj1
-<details open>
+<details>
     <summary>Click to view</summary>
 
 > Proj 1 is a project of whole end-to-end practice, from topic selection to "user" demand analyze to relational model building to database construction. Files can be found at [Proj1](./Proj1/README.md) with more detailed documentations.
+</details>
+
+## HW5
+<details open>
+    <summary>Click to view</summary>
+
+> HW5 is practicing of MongoDB. Files can be found at [HW5](./HW5/README.md) with more detailed documentations.
 </details>
