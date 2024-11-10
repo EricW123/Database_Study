@@ -28,8 +28,15 @@ All HW will be submitted using this repo, and this README will be updated when n
 </details>
 
 ## HW5
-<details open>
+<details>
     <summary>Click to view</summary>
 
 > HW5 is practicing of MongoDB. Files can be found at [HW5](./HW5/README.md) with more detailed documentations.
+</details>
+
+## Proj2
+<details open>
+    <summary>Click to view</summary>
+
+> Proj2 is a project about MongoDB. Files can be found at [Proj2](./Proj2/README.md) with more detailed documentations.
 </details>
