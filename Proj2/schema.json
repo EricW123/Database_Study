@@ -1,0 +1,51 @@
+{
+    "_id": <ObjectId>,
+    "factory_id": "Alaska 1401",
+    "factory_name": "Alaska 14mm #1",
+    "prodlines": [{
+        "_id": <ObjectId>,
+        "prodline_id": 123,
+        "machines": [{
+            "machine_id": 456,
+        }]
+    }]
+}
+
+{
+    "_id": <ObjectId>,
+    "machine_id": 456,
+    "factory_id": 'Alaska 1401',
+    "prodline_id": 123,
+    "anomaly_records": [{
+        "_id": <ObjectId>,
+        "anomaly_id": 789,
+        "time": '2021-01-01T00:00:00Z',
+        "reason": 'Machine stopped',
+        "fixed_by_team": 147,
+    },
+    {
+        "_id": <ObjectId>,
+        "anomaly_id": 789,
+        "time": '2021-01-01T00:00:00Z',
+        "reason": 'Temperature too high',
+        "fixed_by_team": null, // not fixed yet
+    }],
+    "conditions": [{
+        "_id": <ObjectId>,
+        "cond_id": 101,
+        "machine_id": 456,
+        "cond_expr": 'temp > 100',
+    }]
+}
+
+{
+    "_id": <ObjectId>,
+    "team_id": 147,
+    "team_leader": 'John Doe',
+    "fixed_records": [{
+        "anomaly_id": 789,
+    }]
+}
+
+
+
