@@ -1,7 +1,7 @@
 {
   "name": "proj2",
   "version": "1.0.0",
-  "description": "",
+  "description": "This project doesn't depend on any external database, the database tables and values can be created by sqlite code as below.",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

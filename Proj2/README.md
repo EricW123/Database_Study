@@ -8,11 +8,11 @@ This project doesn't depend on any external database, the database tables and va
 2. In this folder (Proj2), run `python generate_data.py` with any version of Python. The code should fit almost any version of Python.
   * The code above will generate three json files, called `fac.json`, `mach.json` and `team.json` respectively.
 3. Insert generated data into database
-  * Open mongoDB Compass, connect to localhost with port 27017, then create a new database in the left panel with name "fms".
+  * Open mongoDB Compass, connect to localhost with port 27017, then create a new database in the left panel with name `fms`.
   * In mongoDB Compass, inside the `fms` database, create three collections with name `factories`, `machines`, `teams` respectively.
   * Click the `factories` collection, then click the green `ADD DATA` button and choose `Insert document`. Copy all letters inside the `fac.json` into the new sub-window. Click the `Format` button on top right corner and then should be able to `Insert`.
   * Do Step6 two more times, inserting `mach.json` into `machines` collection and inserting `team.json` into `teams` collection.
-4. In this folder (Proj2), run `npm install` to init and install required libraries. Then run `node app.js` and queri results should be printed to terminal.
+4. In this folder (Proj2), run `npm install` to init and install required libraries. Then run `node queries.js` and queri results should be printed to terminal.
 
 ## Tasks
 
@@ -23,5 +23,5 @@ This project doesn't depend on any external database, the database tables and va
 4. Populate the tables with test data. You can use tools such as https://www.mockaroo.com/schemasLinks to an external site. or  https://www.generatedata.com/Links to an external site.. You can export the sample data to JSON and then use mongoimport or Mongo Compass to populate your tables. Include in your repository a dump file that can be use to regenerate your database, and the instructions on how to initialize it.
 > Achieved with (generate\_data.py)[./generate\_data.py], instructions already mentioned in `How to run` section.
 5. Define and execute at least five queries that show your database. At least one query must use the aggregation framework https://docs.mongodb.com/manual/aggregation/Links to an external site., one must contain a complex search criterion (more than one expression with logical connectors like $or), one should be counting documents for an specific user, and one must be updating a document based on a query parameter.
-> [app.js](./app.js) contains all 5 queries and outputs them to terminal.
+> [queries.js](./queries.js) contains all 5 queries and outputs them to terminal.
 
