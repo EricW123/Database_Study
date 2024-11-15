@@ -1,1 +1,77 @@
-[{'factory_id': 'esfbx', 'factory_name': 'esfbx 26114', 'prodlines': [{'prodline_id': 316, 'machines': [{'machine_id': 772}, {'machine_id': 1157}]}, {'prodline_id': 945, 'machines': [{'machine_id': 914}]}]}, {'factory_id': 'dinrn', 'factory_name': 'dinrn 433217', 'prodlines': [{'prodline_id': 95, 'machines': []}, {'prodline_id': 115, 'machines': [{'machine_id': 226}]}, {'prodline_id': 226, 'machines': []}, {'prodline_id': 513, 'machines': []}, {'prodline_id': 743, 'machines': [{'machine_id': 1248}]}, {'prodline_id': 817, 'machines': []}]}, {'factory_id': 'dijep', 'factory_name': 'dijep 42017', 'prodlines': [{'prodline_id': 418, 'machines': [{'machine_id': 139}, {'machine_id': 361}, {'machine_id': 501}, {'machine_id': 1050}]}, {'prodline_id': 689, 'machines': [{'machine_id': 28}, {'machine_id': 457}, {'machine_id': 672}, {'machine_id': 844}]}]}]
+[
+    {
+        "factory_id": "orapisb",
+        "factory_name": "orapi 162944",
+        "prodlines": [
+            {
+                "prodline_id": 122,
+                "machines": [
+                    {
+                        "machine_id": 859
+                    },
+                    {
+                        "machine_id": 1041
+                    }
+                ]
+            },
+            {
+                "prodline_id": 445,
+                "machines": []
+            }
+        ]
+    },
+    {
+        "factory_id": "bgvwndgexh",
+        "factory_name": "bgvwn 212646",
+        "prodlines": [
+            {
+                "prodline_id": 34,
+                "machines": [
+                    {
+                        "machine_id": 46
+                    },
+                    {
+                        "machine_id": 181
+                    },
+                    {
+                        "machine_id": 256
+                    },
+                    {
+                        "machine_id": 310
+                    },
+                    {
+                        "machine_id": 440
+                    },
+                    {
+                        "machine_id": 940
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "factory_id": "cnhlp",
+        "factory_name": "cnhlp 462012",
+        "prodlines": [
+            {
+                "prodline_id": 268,
+                "machines": [
+                    {
+                        "machine_id": 543
+                    },
+                    {
+                        "machine_id": 648
+                    }
+                ]
+            },
+            {
+                "prodline_id": 310,
+                "machines": [
+                    {
+                        "machine_id": 764
+                    }
+                ]
+            }
+        ]
+    }
+]

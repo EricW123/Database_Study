@@ -13,7 +13,7 @@ function __toggleButt(p) {
 
 function __fetch(...args) {
     return { then: (func) => {
-        fetch(args)
+        fetch(args, {method: 'GET'})
         .then((res) => {
             if (res.ok)
                 return res.json();
@@ -467,7 +467,7 @@ function addMachRec(dropdown, addCont, machId) {
     function submitText(i) {
         const newText = i.value;
         const nTs = newText.match(/team=(.*), time=([^,]+), reason=(.+)/);
-        if (nTs[1] == '' || nTs[1] == 'null' || nTs[1] == 'NULL') {
+        if (nTs[1] == '' || nTs[1] == 'null') {
             nTs[1] = null;
         } else {
             nTs[1] = parseInt(nTs[1]);
@@ -485,7 +485,6 @@ function addMachRec(dropdown, addCont, machId) {
 
             const info = __create('div');
             info.className = 'info';
-            console.log(data);
             let leader_name = data[1][0]['team_leader'];
             info.textContent = nTs[2] + (leader_name == null ? ' unsolved' : ` solved by ${leader_name}`);
             div.appendChild(info);

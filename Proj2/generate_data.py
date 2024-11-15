@@ -1,4 +1,5 @@
 import random
+import json
 
 machine_ids = []
 team_ids = []
@@ -45,7 +46,7 @@ for i in range(rni(5, 20)):
     machines.append(m)
 
 with open('fac.json', 'w+') as f:
-    f.write(str(factories))
+    json.dump(factories, f, indent=4)
 
 
 teams = []
@@ -60,16 +61,19 @@ for i in range(rni(3, 10)):
 for i in range(rni(5, 20)):
     rec = dict()
     rec["record_id"] = rni(0, 20) + (i+1)*30
+    rec["time"] = f"202{rni(0,2)}-{rni(1,12)}-{rni(1,28)}"
+    rec["reason"] = gname(rni(10, 20))
     if rni(0, 10) <= 1:
         rec["fixed_by_team"] = "null"
     else:
-        rec["fixed_by_team"] = rci(team_ids)
+        team = rci(teams)
+        rec["fixed_by_team"] = team["team_id"]
+        team["fixed_records"].append(rec["record_id"])
 
     records.append(rec)
-    rci(teams)["fixed_records"].append(rec)
 
 with open("team.json", "w+") as f:
-    f.write(str(teams))
+    json.dump(teams, f, indent=4)
 
 cond_ids = []
 for m in machines:
@@ -91,5 +95,5 @@ for m in machines:
         m["conditions"].append(c)
 
 with open("mach.json", "w+") as f:
-    f.write(str(machines))
+    json.dump(machines, f, indent=4)
 

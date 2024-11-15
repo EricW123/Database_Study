@@ -4,11 +4,17 @@
   "description": "This project doesn't depend on any external database, the database tables and values can be created by sqlite code as below.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./node_modules/nodemon/bin/nodemon.js app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "mongodb": "^6.10.0"
+    "ejs": "^3.1.10",
+    "eslint": "^9.14.0",
+    "express": "^4.21.1",
+    "mongodb": "^6.10.0",
+    "nodemon": "^3.1.7",
+    "prettier": "^3.3.3"
   }
 }

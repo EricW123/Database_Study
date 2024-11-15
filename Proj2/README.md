@@ -10,7 +10,7 @@ This project doesn't depend on any external database, the database tables and va
 3. Insert generated data into database
   * Open mongoDB Compass, connect to localhost with port 27017, then create a new database in the left panel with name `fms`.
   * In mongoDB Compass, inside the `fms` database, create three collections with name `factories`, `machines`, `teams` respectively.
-  * Click the `factories` collection, then click the green `ADD DATA` button and choose `Insert document`. Copy all letters inside the `fac.json` into the new sub-window. Click the `Format` button on top right corner and then should be able to `Insert`.
+  * Click the `factories` collection, then click the green `ADD DATA` button and choose `Insert document`. Copy all letters inside the `fac.json` into the new sub-window, replacing all example lines it provides. Click `Insert` button and then the data should be inserted.
   * Do Step6 two more times, inserting `mach.json` into `machines` collection and inserting `team.json` into `teams` collection.
 4. In this folder (Proj2), run `npm install` to init and install required libraries. Then run `node queries.js` and queri results should be printed to terminal.
 

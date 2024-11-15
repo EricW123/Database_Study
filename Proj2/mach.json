@@ -1,1 +1,192 @@
-[{'machine_id': 28, 'factory_id': 'dijep', 'prodline_id': 689, 'anomaly_records': [{'record_id': 166, 'fixed_by_team': 283}, {'record_id': 138, 'fixed_by_team': 168}], 'conditions': [{'cond_id': 65, 'machine_id': 28, 'cond_expr': 'placeholder'}, {'cond_id': 73, 'machine_id': 28, 'cond_expr': 'placeholder'}, {'cond_id': 31, 'machine_id': 28, 'cond_expr': 'placeholder'}]}, {'machine_id': 139, 'factory_id': 'dijep', 'prodline_id': 418, 'anomaly_records': [], 'conditions': [{'cond_id': 10, 'machine_id': 139, 'cond_expr': 'placeholder'}, {'cond_id': 52, 'machine_id': 139, 'cond_expr': 'placeholder'}]}, {'machine_id': 226, 'factory_id': 'dinrn', 'prodline_id': 115, 'anomaly_records': [{'record_id': 259, 'fixed_by_team': 69}], 'conditions': [{'cond_id': 44, 'machine_id': 226, 'cond_expr': 'placeholder'}, {'cond_id': 57, 'machine_id': 226, 'cond_expr': 'placeholder'}, {'cond_id': 48, 'machine_id': 226, 'cond_expr': 'placeholder'}]}, {'machine_id': 361, 'factory_id': 'dijep', 'prodline_id': 418, 'anomaly_records': [{'record_id': 30, 'fixed_by_team': 69}, {'record_id': 230, 'fixed_by_team': 283}], 'conditions': [{'cond_id': 18, 'machine_id': 361, 'cond_expr': 'placeholder'}]}, {'machine_id': 457, 'factory_id': 'dijep', 'prodline_id': 689, 'anomaly_records': [{'record_id': 344, 'fixed_by_team': 90}], 'conditions': [{'cond_id': 69, 'machine_id': 457, 'cond_expr': 'placeholder'}, {'cond_id': 85, 'machine_id': 457, 'cond_expr': 'placeholder'}]}, {'machine_id': 501, 'factory_id': 'dijep', 'prodline_id': 418, 'anomaly_records': [{'record_id': 109, 'fixed_by_team': 'null'}, {'record_id': 308, 'fixed_by_team': 341}], 'conditions': []}, {'machine_id': 672, 'factory_id': 'dijep', 'prodline_id': 689, 'anomaly_records': [], 'conditions': [{'cond_id': 91, 'machine_id': 672, 'cond_expr': 'placeholder'}, {'cond_id': 36, 'machine_id': 672, 'cond_expr': 'placeholder'}, {'cond_id': 66, 'machine_id': 672, 'cond_expr': 'placeholder'}]}, {'machine_id': 772, 'factory_id': 'esfbx', 'prodline_id': 316, 'anomaly_records': [], 'conditions': [{'cond_id': 40, 'machine_id': 772, 'cond_expr': 'placeholder'}, {'cond_id': 58, 'machine_id': 772, 'cond_expr': 'placeholder'}]}, {'machine_id': 844, 'factory_id': 'dijep', 'prodline_id': 689, 'anomaly_records': [{'record_id': 74, 'fixed_by_team': 206}, {'record_id': 181, 'fixed_by_team': 421}], 'conditions': [{'cond_id': 87, 'machine_id': 844, 'cond_expr': 'placeholder'}, {'cond_id': 19, 'machine_id': 844, 'cond_expr': 'placeholder'}]}, {'machine_id': 914, 'factory_id': 'esfbx', 'prodline_id': 945, 'anomaly_records': [], 'conditions': [{'cond_id': 97, 'machine_id': 914, 'cond_expr': 'placeholder'}, {'cond_id': 21, 'machine_id': 914, 'cond_expr': 'placeholder'}, {'cond_id': 88, 'machine_id': 914, 'cond_expr': 'placeholder'}]}, {'machine_id': 1050, 'factory_id': 'dijep', 'prodline_id': 418, 'anomaly_records': [{'record_id': 285, 'fixed_by_team': 341}], 'conditions': [{'cond_id': 84, 'machine_id': 1050, 'cond_expr': 'placeholder'}, {'cond_id': 100, 'machine_id': 1050, 'cond_expr': 'placeholder'}]}, {'machine_id': 1157, 'factory_id': 'esfbx', 'prodline_id': 316, 'anomaly_records': [], 'conditions': []}, {'machine_id': 1248, 'factory_id': 'dinrn', 'prodline_id': 743, 'anomaly_records': [], 'conditions': [{'cond_id': 43, 'machine_id': 1248, 'cond_expr': 'placeholder'}, {'cond_id': 76, 'machine_id': 1248, 'cond_expr': 'placeholder'}, {'cond_id': 45, 'machine_id': 1248, 'cond_expr': 'placeholder'}]}]
+[
+    {
+        "machine_id": 46,
+        "factory_id": "bgvwndgexh",
+        "prodline_id": 34,
+        "anomaly_records": [],
+        "conditions": []
+    },
+    {
+        "machine_id": 181,
+        "factory_id": "bgvwndgexh",
+        "prodline_id": 34,
+        "anomaly_records": [
+            {
+                "record_id": 154,
+                "time": "2020-1-8",
+                "reason": "msewpvdfdrjqr",
+                "fixed_by_team": 82
+            }
+        ],
+        "conditions": [
+            {
+                "cond_id": 42,
+                "machine_id": 181,
+                "cond_expr": "placeholder"
+            },
+            {
+                "cond_id": 98,
+                "machine_id": 181,
+                "cond_expr": "placeholder"
+            }
+        ]
+    },
+    {
+        "machine_id": 256,
+        "factory_id": "bgvwndgexh",
+        "prodline_id": 34,
+        "anomaly_records": [
+            {
+                "record_id": 217,
+                "time": "2020-6-7",
+                "reason": "rmqdhwfocuth",
+                "fixed_by_team": 178
+            },
+            {
+                "record_id": 102,
+                "time": "2021-11-7",
+                "reason": "mmwtlftxmckdm",
+                "fixed_by_team": 178
+            }
+        ],
+        "conditions": []
+    },
+    {
+        "machine_id": 310,
+        "factory_id": "bgvwndgexh",
+        "prodline_id": 34,
+        "anomaly_records": [],
+        "conditions": [
+            {
+                "cond_id": 82,
+                "machine_id": 310,
+                "cond_expr": "placeholder"
+            }
+        ]
+    },
+    {
+        "machine_id": 440,
+        "factory_id": "bgvwndgexh",
+        "prodline_id": 34,
+        "anomaly_records": [
+            {
+                "record_id": 253,
+                "time": "2020-9-6",
+                "reason": "meenhcejvns",
+                "fixed_by_team": 82
+            },
+            {
+                "record_id": 308,
+                "time": "2021-6-28",
+                "reason": "apwrwqdqdagcakeqv",
+                "fixed_by_team": 178
+            }
+        ],
+        "conditions": [
+            {
+                "cond_id": 94,
+                "machine_id": 440,
+                "cond_expr": "placeholder"
+            }
+        ]
+    },
+    {
+        "machine_id": 543,
+        "factory_id": "cnhlp",
+        "prodline_id": 268,
+        "anomaly_records": [
+            {
+                "record_id": 43,
+                "time": "2020-7-28",
+                "reason": "oebrpkpjdx",
+                "fixed_by_team": "null"
+            }
+        ],
+        "conditions": [
+            {
+                "cond_id": 21,
+                "machine_id": 543,
+                "cond_expr": "placeholder"
+            }
+        ]
+    },
+    {
+        "machine_id": 648,
+        "factory_id": "cnhlp",
+        "prodline_id": 268,
+        "anomaly_records": [
+            {
+                "record_id": 279,
+                "time": "2022-1-9",
+                "reason": "ifabixflja",
+                "fixed_by_team": 64
+            },
+            {
+                "record_id": 135,
+                "time": "2022-4-3",
+                "reason": "etdwdsoiksc",
+                "fixed_by_team": 64
+            }
+        ],
+        "conditions": [
+            {
+                "cond_id": 8,
+                "machine_id": 648,
+                "cond_expr": "placeholder"
+            }
+        ]
+    },
+    {
+        "machine_id": 764,
+        "factory_id": "cnhlp",
+        "prodline_id": 310,
+        "anomaly_records": [
+            {
+                "record_id": 338,
+                "time": "2021-7-26",
+                "reason": "mwdarubgkef",
+                "fixed_by_team": 64
+            }
+        ],
+        "conditions": []
+    },
+    {
+        "machine_id": 859,
+        "factory_id": "orapisb",
+        "prodline_id": 122,
+        "anomaly_records": [],
+        "conditions": []
+    },
+    {
+        "machine_id": 940,
+        "factory_id": "bgvwndgexh",
+        "prodline_id": 34,
+        "anomaly_records": [
+            {
+                "record_id": 183,
+                "time": "2020-5-7",
+                "reason": "muxarkbtungpfxohoqit",
+                "fixed_by_team": 178
+            }
+        ],
+        "conditions": []
+    },
+    {
+        "machine_id": 1041,
+        "factory_id": "orapisb",
+        "prodline_id": 122,
+        "anomaly_records": [],
+        "conditions": [
+            {
+                "cond_id": 59,
+                "machine_id": 1041,
+                "cond_expr": "placeholder"
+            },
+            {
+                "cond_id": 36,
+                "machine_id": 1041,
+                "cond_expr": "placeholder"
+            }
+        ]
+    }
+]
