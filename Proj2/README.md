@@ -24,4 +24,10 @@ This project doesn't depend on any external database, the database tables and va
 > Achieved with (generate\_data.py)[./generate\_data.py], instructions already mentioned in `How to run` section.
 5. Define and execute at least five queries that show your database. At least one query must use the aggregation framework https://docs.mongodb.com/manual/aggregation/Links to an external site., one must contain a complex search criterion (more than one expression with logical connectors like $or), one should be counting documents for an specific user, and one must be updating a document based on a query parameter.
 > [queries.js](./queries.js) contains all 5 queries and outputs them to terminal.
+6. Create a Node.js+Express app as interface to your database, then take a video to demonstrate it.
+> The app can be run by following steps:
+  - Run `npm install`
+  - Run `npm start`
+  - Visit `http://localhost:3000`
+> Video is uploaded to NEU Studio Support, won't be uploaded again into git repo.
 
