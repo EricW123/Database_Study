@@ -5,8 +5,8 @@ By Peiyao Wang
 This is a repo for all works done in course5200(Database) in NEU.
 All HW will be submitted using this repo, and this README will be updated when new HW is finished.
 
-
 ## HW3
+
 <details>
     <summary>Click to view</summary>
 
@@ -35,8 +35,15 @@ All HW will be submitted using this repo, and this README will be updated when n
 </details>
 
 ## Proj2
-<details open>
+<details>
     <summary>Click to view</summary>
 
 > Proj2 is a project about MongoDB. Files can be found at [Proj2](./Proj2/README.md) with more detailed documentations.
+</details>
+
+## HW6
+<details open>
+    <summary>Click to view</summary>
+
+> HW6 is practicing of Redis. Files can be found at [HW6](./HW6/README.md) with more detailed documentations.
 </details>

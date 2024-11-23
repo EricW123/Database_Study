@@ -1,5 +1,7 @@
 *.db
 *.db-*
+*.dump
+*.dump.*
 */~$*.docx
 
 */node_modules/*
@@ -7,3 +9,8 @@
 database.sqlite
 main.sqbpro
 package-lock.json
+
+tweetData
+Practice
+
+.gitignore
