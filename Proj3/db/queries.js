@@ -300,9 +300,10 @@ async function removeRecs(id) {
     const machs = await fms.collection("machines");
     const teams = await fms.collection("teams");
 
-    machs.updateMany(
+    const mach = await machs.findOneAndUpdate(
         { "anomaly_records.record_id": parseInt(id) },
-        { $pull: { anomaly_records: { record_id: parseInt(id) } }}
+        { $pull: { anomaly_records: { record_id: parseInt(id) } }},
+        { returnOriginal: false }
     );
 
     teams.updateMany(
@@ -310,7 +311,7 @@ async function removeRecs(id) {
         { $pull: { fixed_records: { record_id: parseInt(id) } }}
     );
 
-    await redis.del(`machines:${id}:status`);
+    await redis.del(`machines:${mach.machine_id}:status`);
 }
 
 async function addAss(cond, m_id) {

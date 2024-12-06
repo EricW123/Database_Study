@@ -42,8 +42,15 @@ All HW will be submitted using this repo, and this README will be updated when n
 </details>
 
 ## HW6
-<details open>
+<details>
     <summary>Click to view</summary>
 
 > HW6 is practicing of Redis. Files can be found at [HW6](./HW6/README.md) with more detailed documentations.
+</details>
+
+## Proj3
+<details open>
+    <summary>Click to view</summary>
+
+> Proj3 is a project about Redis as cache. Files can be found at [Proj3](./Proj3/README.md) with more detailed documentations.
 </details>

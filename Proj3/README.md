@@ -1,33 +1,28 @@
-# Proj2: Design & Implement a Document Database
+# Proj3: Design & Implement a Key-Value In-Memory Database
 
 This project doesn't depend on any external database, the database tables and values can be created by sqlite code as below.
 
 ## How to run
 
 1. Either create a docker container or run mongosh locally, so you can access the mongodb on port 27017.
-2. In this folder (Proj2), run `python generate_data.py` with any version of Python. The code should fit almost any version of Python.
+2. In this folder (Proj3), run `python generate_data.py` with any version of Python. The code should fit almost any version of Python.
   * The code above will generate three json files, called `fac.json`, `mach.json` and `team.json` respectively.
 3. Insert generated data into database
   * Open mongoDB Compass, connect to localhost with port 27017, then create a new database in the left panel with name `fms`.
   * In mongoDB Compass, inside the `fms` database, create three collections with name `factories`, `machines`, `teams` respectively.
   * Click the `factories` collection, then click the green `ADD DATA` button and choose `Insert document`. Copy all letters inside the `fac.json` into the new sub-window, replacing all example lines it provides. Click `Insert` button and then the data should be inserted.
   * Do Step6 two more times, inserting `mach.json` into `machines` collection and inserting `team.json` into `teams` collection.
-4. In this folder (Proj2), run `npm install` to init and install required libraries. Then run `node queries.js` and queri results should be printed to terminal.
+4. In this folder (Proj3), run `npm install` to init and install required libraries. Then run `node queries.js` and queri results should be printed to terminal.
+5. Run `npm start` to start the server, then visit `http://localhost:3000` to see the web page.
 
 ## Tasks
 
-1. Provide the problem requirements and the conceptual model in UML for your project. You can reuse the ones made in Project 1.
-2. Adapt the Logical Data model from your Project 2 to have hierarchical tables. This is, main (root) tables from which all the other tables relate to. This main tables will become later your Mongo Collections. From your main tables you can have aggregation/composition, one to many and many to many relationships.
-3. From this logical model define the main Collections (Documents/Tables) you will be using in your Mongo Database. Provide a couple of JSON examples of these objects with comments when necessary. Think about a document that you will give to another database engineer that would take over your database.
-> Answers of Task 1-3 can be found in [Problem.docx](./Problem.docx)
-4. Populate the tables with test data. You can use tools such as https://www.mockaroo.com/schemasLinks to an external site. or  https://www.generatedata.com/Links to an external site.. You can export the sample data to JSON and then use mongoimport or Mongo Compass to populate your tables. Include in your repository a dump file that can be use to regenerate your database, and the instructions on how to initialize it.
-> Achieved with (generate\_data.py)[./generate\_data.py], instructions already mentioned in `How to run` section.
-5. Define and execute at least five queries that show your database. At least one query must use the aggregation framework https://docs.mongodb.com/manual/aggregation/Links to an external site., one must contain a complex search criterion (more than one expression with logical connectors like $or), one should be counting documents for an specific user, and one must be updating a document based on a query parameter.
-> [queries.js](./queries.js) contains all 5 queries and outputs them to terminal.
-6. Create a Node.js+Express app as interface to your database, then take a video to demonstrate it.
-> The app can be run by following steps:
-  - Run `npm install`
-  - Run `npm start`
-  - Visit `http://localhost:3000`
-> Video is uploaded to NEU Studio Support, won't be uploaded again into git repo.
-
+1. Provide the problem requirements and the conceptual model in UML for your project. You can reuse the one made on previous projects, but describe the functionalities that you selected to be used as an in-memory key-value storage, (e.g. most viewed products, a shopping cart, current logged-in users, etc).
+2. Describe the Redis data structures that you are going to use to implement the functionalities you described in the previous point. (example To implement the most viewed products I will use a Redis sorted set with key "mostViewed:userId", product ids as the values and a score of the number of views of the product.). You can use/describe more than one data structure, you will need to implement at least one.
+3. The redis commands that you would use to interact with your specific Redis structures.
+> Task 1 to 3 can be found in the file [Problem.docx](./Problem.docx), which is a Word document.
+4. Create a basic Node + Express application that let's you create, display, modify and delete at least one Redis data structure from the ones describe in the previous point. No need to have a polished interface, and you can use the code created in class as a starting point, and/or the code you created for previous projects.
+> Check "How to run" section above for how to run the code.
+5. Optional, didn't do.
+6. Create a demonstration video showing the functionalities of your application.
+> video directly uploaded to Canvas, won't be uploaded to Github.
