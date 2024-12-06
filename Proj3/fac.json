@@ -1,0 +1,77 @@
+[
+    {
+        "factory_id": "orapisb",
+        "factory_name": "orapi 162944",
+        "prodlines": [
+            {
+                "prodline_id": 122,
+                "machines": [
+                    {
+                        "machine_id": 859
+                    },
+                    {
+                        "machine_id": 1041
+                    }
+                ]
+            },
+            {
+                "prodline_id": 445,
+                "machines": []
+            }
+        ]
+    },
+    {
+        "factory_id": "bgvwndgexh",
+        "factory_name": "bgvwn 212646",
+        "prodlines": [
+            {
+                "prodline_id": 34,
+                "machines": [
+                    {
+                        "machine_id": 46
+                    },
+                    {
+                        "machine_id": 181
+                    },
+                    {
+                        "machine_id": 256
+                    },
+                    {
+                        "machine_id": 310
+                    },
+                    {
+                        "machine_id": 440
+                    },
+                    {
+                        "machine_id": 940
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "factory_id": "cnhlp",
+        "factory_name": "cnhlp 462012",
+        "prodlines": [
+            {
+                "prodline_id": 268,
+                "machines": [
+                    {
+                        "machine_id": 543
+                    },
+                    {
+                        "machine_id": 648
+                    }
+                ]
+            },
+            {
+                "prodline_id": 310,
+                "machines": [
+                    {
+                        "machine_id": 764
+                    }
+                ]
+            }
+        ]
+    }
+]

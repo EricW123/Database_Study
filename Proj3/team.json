@@ -1,0 +1,40 @@
+[
+    {
+        "team_id": 73,
+        "team_leader": "mfeiaaufei",
+        "fixed_records": []
+    },
+    {
+        "team_id": 64,
+        "team_leader": "ggerdwkvqr",
+        "fixed_records": [
+            73,
+            135,
+            279,
+            338
+        ]
+    },
+    {
+        "team_id": 82,
+        "team_leader": "qdacjgvlam",
+        "fixed_records": [
+            154,
+            253
+        ]
+    },
+    {
+        "team_id": 126,
+        "team_leader": "vvdxpfuaoo",
+        "fixed_records": []
+    },
+    {
+        "team_id": 178,
+        "team_leader": "gccufrtscb",
+        "fixed_records": [
+            102,
+            183,
+            217,
+            308
+        ]
+    }
+]
